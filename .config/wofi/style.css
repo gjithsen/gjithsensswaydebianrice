@@ -1,0 +1,99 @@
+/* /home/fuentes/.config/wofi/style.css */
+
+* {
+    font-size: 14px;
+ }
+
+window {
+     background: rgba(6, 18, 36, 0.6);
+}
+
+#input {
+     margin: 250px;
+     margin-left: 600px;
+     margin-right: 600px;
+     margin-top: 360px;
+     margin-bottom: 0px;
+     padding: 10px;
+     background: transparent;
+     color: rgb(24, 37, 48);
+}
+
+#inner-box {
+     margin-top: 5px;
+}
+
+#entry {
+     margin-top: 0px;
+     margin-left: 600px;
+     margin-right: 600px;
+     padding: 15px;
+     background: rgba(6, 18, 36, 0.1);
+     border-radius: 0px;
+     color: rgb(0, 3, 25);
+}
+
+
+
+
+
+#entry:selected {
+     background-color: rgba(6, 18, 36, 0.88);
+}
+#text:selected {
+     color: rgb(57, 97, 142);
+}
+
+#scroll {
+     margin-bottom: 270px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* window {
+margin: 5px;
+border: 2px solid red;
+background-color: red;
+}
+
+#input {
+margin: 5px;
+border: 2px solid blue;
+background-color: blue;
+}
+
+#inner-box {
+margin: 5px;
+border: 2px solid yellow;
+background-color: yellow;
+}
+
+#outer-box {
+margin: 5px;
+border: 2px solid green;
+background-color: green;
+}
+
+#scroll {
+margin: 5px;
+border: 2px solid orange;
+background-color: orange;
+}
+
+#text {
+margin: 5px;
+border: 2px solid cyan;
+background-color: cyan;
+}  */

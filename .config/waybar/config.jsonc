@@ -1,0 +1,72 @@
+// /home/fuentes/.config/waybar/config.jsonc
+
+{
+    "layer": "bottom",
+    "position": "top",
+    "margin-top": 20,
+    "width": 1500,
+    "modules-left": [
+        "sway/workspaces",
+        "sway/mode"
+    ],
+    "modules-center": [
+        // "sway/window"
+        "clock"
+    ],
+    "modules-right": [
+        "network",
+        "pulseaudio",
+        "battery"
+    ],
+    "battery": {
+        "format": "{capacity}% {icon}",
+        "format-icons": [
+            "", 
+            "", 
+            "", 
+            "", 
+            ""
+        ]
+    },
+    "clock": {
+        "format-alt": "{:%a, %d. %b  %H:%M}"
+    },
+    "pulseaudio": {
+    "format": "{volume}% {icon}",
+    "format-bluetooth": "{volume}% {icon}",
+    "format-muted": "",
+    "format-icons": {
+        "headphone": "",
+        "hands-free": "",
+        "headset": "",
+        "phone": "",
+        "phone-muted": "",
+        "portable": "",
+        "car": "",
+        "default": ["", "", ""]
+    },
+    "scroll-step": 1,
+    "on-click": "pavucontrol",
+    "ignored-sinks": ["Easy Effects Sink"],
+    "on-click": "pavucontrol"
+    },
+    "network": {
+        "interface": "wlo1",
+        "format": "{ifname}",
+        "format-wifi": "{essid} ({signalStrength}%) ",
+        "format-ethernet": "{ipaddr}/{cidr} 󰊗",
+        "format-disconnected": "", //An empty format will hide the module.
+        "tooltip-format": "{ifname} via {gwaddr} 󰊗",
+        "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
+        "tooltip-format-ethernet": "{ifname} ",
+        "tooltip-format-disconnected": "Disconnected",
+        "max-length": 50
+    },
+    "sway/workspaces": {
+    "persistent-workspaces": {
+        "1": [], // Always show a workspace with name '3', on all outputs if it does not exists
+        "2": ["eDP-1"], // Always show a workspace with name '4', on output 'eDP-1' if it does not exists
+        "3": ["eDP-1", "DP-2"] // Always show a workspace with name '5', on outputs 'eDP-1' and 'DP-2' if it does not exists
+    }
+}
+}

@@ -1,0 +1,83 @@
+// /home/fuentes/.config/fastfetch/config.jsonc
+
+// {
+//   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+//   "modules": [
+//     "title",
+//     "separator",
+//     "os",
+//     "host",
+//     "kernel",
+//     "uptime",
+//     "packages",
+//     "shell",
+//     "display",
+//     "de",
+//     "wm",
+//     "wmtheme",
+//     "theme",
+//     "icons",
+//     "font",
+//     "cursor",
+//     "terminal",
+//     "terminalfont",
+//     "cpu",
+//     "gpu",
+//     "memory",
+//     "swap",
+//     "disk",
+//     "localip",
+//     "battery",
+//     "poweradapter",
+//     "locale",
+//     "break",
+//     "colors"
+//   ]
+// }
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+        "color": {
+            "1": "38;2;0;50;150"   // Only set color 1 to your darker blue (adjust RGB if needed)
+            // Remove "2" entirely – unset colors fall back to the logo's original/default
+        }
+    },
+    "display": {
+        "color": {
+            "keys": "38;2;0;50;150",
+            "title": "38;2;0;50;150"
+        }
+    },
+    // Keep your other settings/modules here if you have them
+    "modules": [
+    "title",
+    "separator",
+    "os",
+    "host",
+    "kernel",
+    "uptime",
+    "packages",
+    "shell",
+    // "display",
+    "de",
+    "wm",
+    "wmtheme",
+    "theme",
+    "icons",
+    "font",
+    "cursor",
+    "terminal",
+    // "terminalfont",
+    "cpu",
+    "gpu",
+    "memory",
+    "swap",
+    "disk",
+    "localip",
+    "battery",
+    "poweradapter",
+    "locale",
+    "break",
+    "colors"
+  ]
+}
