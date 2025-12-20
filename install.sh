@@ -20,19 +20,19 @@ xargs sudo apt install -y < manual_packages.txt
 echo "Installing config files..."
 mkdir -p ~/.config
 
-cp -r config/fastfetch ~/.config/
-cp -r config/foot ~/.config/
-cp -r config/sway ~/.config/
-cp -r config/waybar ~/.config/
-cp -r config/wofi ~/.config/
+mv config/fastfetch ~/.config/
+mv config/foot ~/.config/
+mv config/sway ~/.config/
+mv config/waybar ~/.config/
+mv config/wofi ~/.config/
 
 # Copy .bashrc
-cp home/.bashrc ~/
+mv home/.bashrc ~/
 
 # Copy wallpapers
 echo "Copying wallpapers..."
 mkdir -p ~/Pictures
-cp -r Wallpapers ~/Pictures
+mv Wallpapers ~/Pictures
 
 # Optional: Set a default wallpaper (using swaybg)
 # You can change this later with feh, swaybg, or your preferred tool

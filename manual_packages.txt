@@ -15,7 +15,6 @@ bzip2
 ca-certificates
 cava
 cmatrix
-code
 console-setup
 coreutils
 cpio
