@@ -20,11 +20,11 @@ xargs sudo apt install -y < manual_packages.txt
 echo "Installing config files..."
 mkdir -p ~/.config
 
-mv config/fastfetch ~/.config/
-mv config/foot ~/.config/
-mv config/sway ~/.config/
-mv config/waybar ~/.config/
-mv config/wofi ~/.config/
+mv .config/fastfetch ~/.config/
+mv .config/foot ~/.config/
+mv .config/sway ~/.config/
+mv .config/waybar ~/.config/
+mv .config/wofi ~/.config/
 
 # Copy .bashrc
 mv home/.bashrc ~/
